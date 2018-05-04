@@ -20,14 +20,14 @@ def get_mnist_train_data_loader(image_size=64, batch_size=100):
         download=True
     )
 
-    print(mnist_train)
-
     # instantiates a DataLoader for the mnist_train with batch_size=batch_size
     data_loader = tdata.DataLoader(
         mnist_train,
         batch_size=batch_size,
         shuffle=True
     )
+
+    print("MNIST train dataset loaded")
 
     return data_loader
 
@@ -55,5 +55,7 @@ def get_mnist_test_data_loader(image_size=64, batch_size=100):
         batch_size=batch_size,
         shuffle=True
     )
+
+    print("MNIST test dataset loaded")
 
     return data_loader

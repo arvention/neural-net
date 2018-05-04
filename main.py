@@ -10,7 +10,7 @@ if __name__ == '__main__':
     epochs = 10
     image_size = 28
     batch_size = 100
-    num_hid_neurons = [5]
+    num_hid_neurons = [10, 20]
     classes = 10
     lr = 0.001
 
